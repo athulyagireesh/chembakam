@@ -31,7 +31,7 @@
 
 .logo img{
     padding-top: 1%;
-    padding-left: 6%;
+    padding-left: 25%;
 }
 
 .nav-opt{
@@ -103,7 +103,7 @@
 
 .search {
     padding-top: 3%;
-    padding-left: 10%;
+    padding-left: 2%;
     box-sizing: border-box;
 }
 
@@ -113,8 +113,8 @@
 }
 
 .fb img{
-    padding-top: 50%;
-    padding-left: 110%;
+    padding-top: 60%;
+    padding-left: 40%;
 }
 
 .fb img:hover{
@@ -122,20 +122,20 @@
 }
 
 .linkedin img{
-    padding-top: 70%;
-    padding-left: 160%;
+    padding-top: 88%;
+    padding-left: 55%;
 }
 
 
 .wish img{
-    padding-top: 70%;
-    padding-left: 240%;
+    padding-top: 80%;
+    padding-left: 85%;
 }
 
 
 .basket img{
-    padding-top: 65%;
-    padding-left: 300%;
+    padding-top: 75%;
+    padding-left: 100%;
 }
 
 
@@ -184,9 +184,13 @@ h1, h2 {
 }
 
 .btn-box-shop button{
-    width:40%;
-    height:40%;
-    align-items: center;
+    width: 30%;
+    height: 1vh;    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color:darkgrey;
+    font-size:medium;
 }
 
 
@@ -313,25 +317,17 @@ h1, h2 {
 }
 
 .button-section {
-    width: 100%;
+    padding-left: 35%;
+    width: 30%;
     height: 10vh;    
     display: flex;
     justify-content: center;
     align-items: center; 
 }
 
-.browse-btn {
-    text-decoration: none;
-    padding: 2% 5%;  
-    border: 0.1rem solid grey;
-    color: grey;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    border-radius: 0.3rem;
+.button-section button:hover{
+    color:darkgray;
 }
-
-
-
 
 
 
@@ -475,15 +471,216 @@ button {
     padding-top: 5%;
 }
 
-/* @media screen and (max-width: 800px) {
-    .footer-section {
-        width: 90%;
-        text-align: center;
-        padding-top: 8%;
-    }
+.bottom-btn-box button:hover{
+    color: darkgrey;
+}
 
-    .icons-box {
-        width: 60%;
-        margin-left: 20%;
-    }
-} */
+.bottom-btn-box button{
+    width: 20%;
+    height: 3vh;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ===========================================================
+   RESPONSIVE DESIGN FOR ALL DEVICES
+   =========================================================== */
+
+/* 🔸 Small Mobiles (max-width: 480px) */
+@media (max-width: 480px) {
+
+  /* SECTION 1 – top bar */
+  .first {
+    height: auto;
+    padding: 2% 0;
+  }
+
+  .welcome h5 {
+    font-size: 0.8rem;
+  }
+
+  /* SECTION 2 – navbar */
+  .second {
+    height: auto;
+    padding-bottom: 5%;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    padding-left: 0;
+    width: 40%;
+  }
+
+  .nav-opt,
+  .review,
+  .about,
+  .contact,
+  .search {
+    padding-left: 0;
+    padding-top: 3%;
+    text-align: center;
+  }
+
+  .search input {
+    width: 80%;
+    padding: 2%;
+  }
+
+  /* Social icons */
+  .fb img,
+  .linkedin img,
+  .wish img,
+  .basket img {
+    padding-left: 0;
+    padding-top: 5%;
+    width: 20%;
+  }
+
+  /* SECTION 3 – Hero Banner */
+  .main-img {
+    height: 45vh;
+  }
+
+  .content {
+    width: 90%;
+    padding-left: 5%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .title-chempakam {
+    font-size: 2rem;
+  }
+
+  .btn-box-shop button {
+    width: 60%;
+    height: auto;
+    padding: 10px;
+  }
+
+  /* SECTION 4 – Category Circles */
+  .category {
+    width: 40%;
+  }
+
+  /* SECTION 5 – Best Products Row */
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 70%;
+    margin-bottom: 5%;
+  }
+
+  /* SECTION 6 – Load more button */
+  .button-section {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  /* SECTION 7 – Big product grid */
+  .card {
+    width: 45%;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  /* SECTION 8 – Footer */
+  .footer-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .icons-box {
+    justify-content: center;
+    gap: 10%;
+  }
+}
+
+
+
+/* 🔸 Tablets (max-width: 900px) */
+@media (max-width: 900px) {
+
+  /* Navbar */
+  .logo img {
+    width: 30%;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Hero */
+  .content {
+    width: 70%;
+    padding-left: 5%;
+  }
+
+  .title-chempakam {
+    font-size: 3rem;
+  }
+
+  /* Categories */
+  .category {
+    width: 25%;
+  }
+
+  /* Product cards section */
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .product-card {
+    width: 40%;
+  }
+
+  /* Big grid */
+  .card {
+    width: 30%;
+  }
+
+  /* Footer */
+  .footer-section {
+    width: 45%;
+  }
+}
+
+
+
+/* 🔸 Large Screens (min-width: 1400px) */
+@media (min-width: 1400px) {
+
+  .content {
+    font-size: 2rem;
+  }
+
+  .title-chempakam {
+    font-size: 4.5rem;
+  }
+
+  .btn-box-shop button {
+    width: 25%;
+  }
+
+  .category {
+    width: 10%;
+  }
+
+  .card {
+    width: 20%;
+  }
+}
